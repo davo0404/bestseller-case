@@ -1,71 +1,11 @@
 # BESTSELLER Data Scientist Interview Case
 
 
-## Project structure
-
-The repository is organized to separate concerns by responsibility:
-
-```text
-bestseller-case/
-├── .github/
-│   ├── copilot-instructions.md
-│   └── skills/
-│       └── grilling/
-│           └── SKILL.md
-├── data/
-│   ├── raw/
-│   │   └── fashion_boutique_dataset.json
-│   └── processed/
-│       └── weekly_sku_features.json
-├── docs/
-│   └── 2026-08-13 AIFP Data Scientist Case.pdf
-├── notebooks/
-├── results/
-├── scripts/
-│   └── run_pipeline.py
-├── src/
-│   ├── __init__.py
-│   └── bestseller_forecast/
-│       ├── __init__.py
-│       ├── data.py
-│       ├── features.py
-│       ├── models.py
-│       └── evaluation.py
-├── .gitignore
-├── LICENSE
-├── README.md
-├── requirements.txt
-├── image.png
-└── .gitkeep
-```
-
-## Workflow
-
-1. Load the raw dataset from `data/raw/`.
-2. Build rolling and lag features in `src/bestseller_forecast/features.py`.
-3. Train the forecasting model in `src/bestseller_forecast/models.py`.
-4. Evaluate metrics in `src/bestseller_forecast/evaluation.py`.
-5. Run the full workflow with:
-
-```bash
-python scripts/run_pipeline.py
-```
-
-## Requirements
-
-Install dependencies with:
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-# Original case brief (original pdf in docs/)
-
 ## Forecasting SKU-Level Demand
 
 Forecasting is an essential part of managing the supply chain and to ensure our products are always in stock. In BESTSELLER we have a range of tools to help planners maintain stock levels. In one of these tools, we need to forecast at a weekly granularity four weeks ahead what the demand is at SKU-level.
+
+### What is a SKU?
 
 A SKU in BESTSELLER is a combination of a style, a colour and a size.
 
@@ -112,5 +52,16 @@ The purpose of the exercise is to have a foundation for discussion. Please only 
 If there are any questions, please do reach out.
 
 
-## DEV notes
-Token optimisation: https://github.com/rtk-ai/rtk
+## For token optimisation
+
+https://github.com/rtk-ai/rtk
+
+darius-valentinonete@Darius-Valentins-MacBook-Air-M1 bestseller-case % rtk init -g  --copilot
+[ok] Added Copilot user-level instructions to /Users/darius-valentinonete/.copilot/copilot-instructions.md
+
+GitHub Copilot global integration installed (user-scoped).
+
+  Hook config:    /Users/darius-valentinonete/.copilot/hooks/rtk-rewrite.json
+  Instructions:   /Users/darius-valentinonete/.copilot/copilot-instructions.md
+
+  Applies to all Copilot CLI sessions on this machine.
