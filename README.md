@@ -61,9 +61,7 @@ pip install -r requirements.txt
 
 ---
 
-## Original case brief
-# BESTSELLER Data Scientist Interview Case
-
+# Original case brief (original pdf in docs/)
 
 ## Forecasting SKU-Level Demand
 
