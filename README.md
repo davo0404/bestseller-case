@@ -50,3 +50,18 @@ Stockouts represented in the historical sales data will be problematic for the m
 The purpose of the exercise is to have a foundation for discussion. Please only use a couple of hours on this exercise – we are not looking for a fully detailed solution.
 
 If there are any questions, please do reach out.
+
+
+## For token optimisation
+
+https://github.com/rtk-ai/rtk
+
+darius-valentinonete@Darius-Valentins-MacBook-Air-M1 bestseller-case % rtk init -g  --copilot
+[ok] Added Copilot user-level instructions to /Users/darius-valentinonete/.copilot/copilot-instructions.md
+
+GitHub Copilot global integration installed (user-scoped).
+
+  Hook config:    /Users/darius-valentinonete/.copilot/hooks/rtk-rewrite.json
+  Instructions:   /Users/darius-valentinonete/.copilot/copilot-instructions.md
+
+  Applies to all Copilot CLI sessions on this machine.
