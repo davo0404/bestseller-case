@@ -16,9 +16,11 @@ feature_cols = [
 X = pr.model_df[feature_cols]
 y = pr.model_df['weekly_sales']
 
-# Split date: hold out the last 8 weeks for evaluation
-split_date = pr.model_df['week_start'].max() - pd.Timedelta(weeks=8)
+# Split date: hold out the last 4 weeks for evaluation
+# Split date: hold out the last 1 week instead
+split_date = pr.model_df['week_start'].max() - pd.Timedelta(weeks=1)
 train_mask = pr.model_df['week_start'] < split_date
+
 
 X_train, y_train = X[train_mask], y[train_mask]
 X_test, y_test = X[~train_mask], y[~train_mask]
