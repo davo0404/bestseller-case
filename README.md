@@ -1,5 +1,7 @@
 # BESTSELLER Data Scientist Interview Case
 
+I've found a data set on kaggel started playing with it. [More details about the data set](https://www.kaggle.com/datasets/pratyushpuri/retail-fashion-boutique-data-sales-analytics-2025)
+
 
 ## Forecasting SKU-Level Demand
 
