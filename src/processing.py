@@ -193,9 +193,9 @@ model_df = weekly_df.dropna(subset=['lag_1_sales']).copy()
 
 model_df.to_json('data/processed/weekly_sku_features.json', orient='index', indent=2 )
 
-# Just for eye-check
-model_df.sort_values(by="week_of_year").to_csv('data/processed/weekly_sku_features.csv')
-
 
 # print(len(weekly_df))  #1699
 # print(len(model_df))   #241 #277 after dropping the rating
+
+print("Min:", df['week_start'].min())
+print("Max:", df['week_start'].max())
