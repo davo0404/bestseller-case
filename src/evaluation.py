@@ -33,7 +33,11 @@ Mean Absolute Error (MAE): 0.7291 units
 Root Mean Squared Error (RMSE): 1.5187 units
 
 1 week ahead, but most of the data is in the last week.
+Interestingly, the reuslts are worse even though the train data is more abundant.
+Likely sensitive to spikes
 --- Model Results ---
+Split Date:  2025-07-28 00:00:00
+Max Week Start Date:  2025-08-04 00:00:00
 Train set size: 64 samples
 Test set size:  213 samples
 Mean Absolute Error (MAE): 0.7597 units
